@@ -14,6 +14,14 @@
        msg: I am Learning Ansible
    - name: Print statement
      ansible.builtin.debug:
-       msg: I am Learning Ansible            
+       msg: "{{ URL_TASK }}"
+   - name: Task variable
+     ansible.builtin.debug:
+        msg: URL_TASK - {{ URL_TASK }}
+     vars:
+        URL_TASK: tasks.example.com      
+
+
+#vars can be defined at 2 leave - global and one is at task level                
 
    
