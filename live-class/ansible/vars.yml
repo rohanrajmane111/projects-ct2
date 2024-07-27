@@ -1,12 +1,14 @@
 - name: Print sample text
   hosts: localhost
+  vars:
+   URL_PLAY: I like to write Ansible Playbooks
   tasks:
    - name: Print statement
      ansible.builtin.debug:
-       msg: I like Ansible
+       msg: {{ URL_PLAY }}
    - name: Print statement
      ansible.builtin.debug:
-       msg: I like Ansible
+       msg: {{ URL_PLAY }}
    - name: Print statement
      ansible.builtin.debug:
        msg: I am Learning Ansible
