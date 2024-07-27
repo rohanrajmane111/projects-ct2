@@ -5,10 +5,10 @@
   tasks:
    - name: Print statement
      ansible.builtin.debug:
-       msg: {{ URL_PLAY }}
+       msg: Test var - {{ URL_PLAY }}
    - name: Print statement
      ansible.builtin.debug:
-       msg: {{ URL_PLAY }}
+       msg: Test var - {{ URL_PLAY }}
    - name: Print statement
      ansible.builtin.debug:
        msg: I am Learning Ansible
