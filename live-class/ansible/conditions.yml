@@ -10,3 +10,6 @@
       ansible.builtin.debug:
         msg: fruits
       when: type == "fruits"
+
+#Linux and Windows
+#when: os_family=="windows/linux"
