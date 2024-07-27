@@ -1,0 +1,8 @@
+- name: Print sample text
+  host: all
+  tasks:
+   - name: Print statement
+     ansible.builtin.debug:
+       msg: I am Learning Ansible
+
+   

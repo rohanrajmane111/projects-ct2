@@ -1,0 +1,28 @@
+---
+- hosts: host1 #
+  sudo: yes
+  name: Play 2 #
+  tasks: #
+  
+    - name: Execute command 
+      command:
+      date:
+    
+    - name: Execute script on server
+
+# These follow a parent /child identation method 
+
+List Method
+
+Ansible Playbooks
+---
+- hosts: host1 #
+  sudo: yes
+  name: Play 3 #
+  tasks: #
+  
+    - name: Execute command 
+      command:
+      date:
+    
+    - name: Execute script on server
