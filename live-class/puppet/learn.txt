@@ -1,0 +1,65 @@
+package {{‘nginx':
+  ensure=> 'installed',
+}
+
+# Predefined or built-in / custom
+
+resource_type { ‘resource_
+    attribute value,
+    …
+}
+
+Baiscs of Writing Puppet manifests/files
+
+1. Resource (n number)
+2. Resource Types
+3. here all files should have an extention of *.pp
+
+puppet --help
+puppet resource 
+puppet describe
+puppet apply filename
+
+Resource ---> Manifest (.pp)
+
+#Install
+1. Puppet Server
+2. Install PDK
+3. Install P agent
+4. Configure the Master Machine
+5. Start Puppet Server
+6. DNS Chnages to the Puppet Master Server
+
+
+/etc/puppet/code/environments/production/manifests  ----> where u should keep ur manifests files for the slaves to read.
+
+Varibles
+Loops
+Conditions   ----> onlyif
+
+node default{
+  $text= "hello world\n"
+  file{'/tmp/helloworld.txt':
+    content => $text,
+    mode    => '0644',
+  }
+}
+
+node default{
+  exec{'Conditions':
+    command => '/bin/echo "Apache is installed" > /tmp/software.txt',
+    onlyif  => '/bin/which apache2',
+  }
+}
+
+node default{
+  $packages= ['apache2','mysql-server']
+  
+  package{$packages:
+    ensure => installed,
+  }
+}
+
+DRY Principles -- MOdules
+
+
