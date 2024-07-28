@@ -19,8 +19,18 @@
      ansible.builtin.debug:
         msg: URL_TASK - {{ URL_TASK }}
      vars:
-        URL_TASK: tasks.example.com      
+        URL_TASK: tasks.example.com     
 
+   - name: Check Server Uptime
+     ansible.builtin.shell: uptime
+     register: OUTPUT
+
+   - name: Check Server Uptime
+     ansible.builtin.debug: 
+       msg: "{{ OUTPUT }}"
+
+
+    
 
 #vars can be defined at 2 leave - global and one is at task level                
 
