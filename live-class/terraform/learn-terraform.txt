@@ -1,0 +1,8 @@
+object type of terraform "name of the Predefined object by Terraform" "my local name to identify the object" {
+    attributes based on the type of Terraform object we are trying to create
+}
+
+resource "aws_instance" "myec2server" {
+    ami = ""
+    instance_type = ""
+}
