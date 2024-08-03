@@ -6,3 +6,7 @@ resource "aws_instance" "myec2server" {
     ami = ""
     instance_type = ""
 }
+
+
+It is a folder based language ( fronetend, backend)
+1. output -- Print any stateemnt or attributes
