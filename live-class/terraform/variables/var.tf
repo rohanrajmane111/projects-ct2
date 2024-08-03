@@ -34,3 +34,20 @@ output "y_1" {
 output "z_x" {
   value = var.z_map["x"]
 }
+
+
+variable "env" {}
+output "env" {
+  value = var.env
+}
+
+output "env-name" {
+  value = "Environment Name - ${var.env} - ${upper(var.env)}"
+}
+
+# Only use quotes when u have string values ""
+// Files name that TF undertands it is a varible Files
+
+// 1. var.tf
+// 2. *.tfvars  {dev, prod, test}
+// 3. *.auto.tfvars 
