@@ -14,4 +14,4 @@ It is a folder based language ( fronetend, backend)
 3. resource
 4. Data Block
 5. Conditions   --- condition ? true-value : false-value
-6. Loops
+6. Loops  --- > count = 10 , for_each
