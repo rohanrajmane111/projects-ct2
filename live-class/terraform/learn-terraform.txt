@@ -11,3 +11,7 @@ resource "aws_instance" "myec2server" {
 It is a folder based language ( fronetend, backend)
 1. output -- Print any stateemnt or attributes
 2. varibales -- int, string , bool , list , map
+3. resource
+4. Data Block
+5. Conditions   --- condition ? true-value : false-value
+6. Loops
