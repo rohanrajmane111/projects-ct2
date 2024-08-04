@@ -15,3 +15,6 @@ It is a folder based language ( fronetend, backend)
 4. Data Block
 5. Conditions   --- condition ? true-value : false-value
 6. Loops  --- > count = 10 , for_each
+
+7. Modules --  to follow DRY principles ---> first write a module block and then call it (local)
+   and also remote support
