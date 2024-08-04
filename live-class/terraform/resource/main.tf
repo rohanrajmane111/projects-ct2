@@ -5,7 +5,18 @@ terraform {
       version = "5.59.0"
     }
   }
+  backend "s3" {
+    bucket = "myawss3tfstatexxx"
+    key    = "myterraform/demo/terraform.tfstate"
+    region = "us-east-1" 
+
+       
+    # For State Locking
+    dynamodb_table = "project-tf"    
+  } 
 }
+
+
 
 # Provider Block
 provider "aws" {
