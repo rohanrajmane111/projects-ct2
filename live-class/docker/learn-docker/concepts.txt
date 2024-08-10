@@ -44,6 +44,11 @@ The
 ENTRYPOINT keyword is used strictly to run commands the
 moment the container initializes. The
 
+EXPOSE 804 --- it define which port u want ur conatiner to get the traffic 
+
+WORKDIR
+MAKEDIR 
+
 ###the name has to be same (Dockerfile)
 
 FROM ubuntu:24.04
@@ -59,3 +64,6 @@ docker run --name nginx ubuntu:24.02 -p 8083:80(hostport:containerport)
 PUSH
 -----
 Get the image ---> Change the tag of the imaage based on your repo ---> Push the image (Login must)
+
+
+Parent Image vs Base Image
