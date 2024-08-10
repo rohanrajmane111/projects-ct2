@@ -54,7 +54,7 @@ CMD nginx -g 'daemon off;'
 
 docker build .
 
-docker run --name nginx ubuntu:24.02
+docker run --name nginx ubuntu:24.02 -p 8083:80(hostport:containerport)
 
 PUSH
 -----
