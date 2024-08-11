@@ -67,3 +67,38 @@ Get the image ---> Change the tag of the imaage based on your repo ---> Push the
 
 
 Parent Image vs Base Image
+
+100 containers
+
+docker run
+docker run 
+
+Docker Compose samle file:
+
+docker run --name nginx ubuntu:24.02 -p 8083:80 -v hostpath:contianer
+
+version: '3'
+services:  -- stands for holding the entire stack of  the containers list
+  conatiner 1:
+    image: ubuntu:24.02
+    ports:
+    - "8083:80"
+  container 2:
+    image: image:v2
+    ports:
+    - "8084:80"
+    env:
+    - email: akas@gmail.command
+    - config: test
+    volumes:
+    - db_data:/app
+    restart:  always
+volumes:
+ db_data:
+network:
+  
+
+docker-compose down -d  
+
+
+       
